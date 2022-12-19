@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #333; */
+  grid-column: 1 / -1;
+  padding: 0 3rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  font-family: 'Roboto Mono';
+  font-size: 0.85rem;
+}
+
+header a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  color: #fff;
+  align-self: center;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 3rem;
+  letter-spacing: -0.2rem;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.resume {
+  text-decoration: underline;
+}
