@@ -4,9 +4,11 @@
 header {
   display: flex;
   justify-content: space-between;
-  /* background-color: #333; */
   grid-column: 1 / -1;
   padding: 0 3rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--BACKGROUND-COLOR);
 }
 
 header ul {
@@ -20,7 +22,7 @@ header ul {
 }
 
 header a {
-  color: #ccc;
+  color: var(--NORMAL-COLOR);
   text-decoration: none;
 }
 
@@ -29,7 +31,7 @@ header a:hover {
 }
 
 .logo {
-  color: #fff;
+  color: var(--BRIGHT-COLOR);
   align-self: center;
   font-family: 'Reenie Beanie', cursive;
   font-size: 3rem;

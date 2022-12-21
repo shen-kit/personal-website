@@ -1,0 +1,21 @@
+.center {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  margin-left: 1em;
+  line-height: 1.5;
+}
+
+.mainList {
+  margin-left: 2em;
+}
+
+strong {
+  font-weight: 500;
+  color: var(--ACCENT-COLOR);
+}

@@ -4,11 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+ --SHADOW: 2px 2px 3px #000;
+
+ /* COLOURS */
+ --NORMAL-COLOR: #ccc;
+ --BRIGHT-COLOR: #eee;
+ --ACCENT-COLOR: #F57247;
+ --BACKGROUND-COLOR: #1e1d49;
+}
+
 body {
   font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background-color: #1e1d49;
-  color: #ccc;
+  background-color: var(--BACKGROUND-COLOR);
+  color: var(--NORMAL-COLOR);
   min-height: 100vh;
+  font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,3 +32,9 @@ code {
 #root {
   height: 100vh;
 }
+
+p {
+  font-family: 'Roboto';
+  line-height: 1.5;
+}
+
