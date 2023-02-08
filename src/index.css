@@ -10,7 +10,7 @@
  /* COLOURS */
  --NORMAL-COLOR: #ccc;
  --BRIGHT-COLOR: #eee;
- --ACCENT-COLOR: #F57247;
+ --ACCENT-COLOR: #F7776F;
  --BACKGROUND-COLOR: #1e1d49;
 }
 
@@ -36,5 +36,11 @@ code {
 p {
   font-family: 'Roboto';
   line-height: 1.7;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 

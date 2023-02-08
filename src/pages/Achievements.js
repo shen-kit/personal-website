@@ -31,6 +31,7 @@ function Achievements() {
       <h2>Co-Curricular Activities</h2>
       <ul>
         <li>Played in the Honours Division for interschool volleyball (2022)</li>
+        <li>Formed a barbershop quartet with 3 friends, we performed at primary schools and eventually at our own graduation ceremony</li>
         <li>Won 2 ICAS Science medals in 2019 & 2021 (top in the state)</li>
         <li>State finalist in the Microsoft AI For Good Challenge (2020)</li>
       </ul>
