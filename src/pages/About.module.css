@@ -16,3 +16,6 @@
   box-shadow: var(--SHADOW);
 }
 
+.p {
+  text-align: justify;
+}
