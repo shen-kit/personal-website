@@ -23,6 +23,7 @@ function Projects() {
 
       <h2 className={classes.h2}>CLI Password Manager (2023)</h2>
       <p className={classes.lastParagraph}>I've made several password managers over the years, the most recent one in 2023 in Python using the Cryptography library for security. I decided to make it to learn a the basics of cryptography and to refresh my knowledge of databases (I used sqlite3). Additionally, I enjoy working in the terminal so didn't want a GUI password manager. Functionality includes setting a master password which is then encrypted, adding/editing/deleting new services, listing all stored services, and resetting the database. While this wasn't very challenging to build, it is the project which I use the most in my daily life.</p>
+      
     </div>
   );
 }

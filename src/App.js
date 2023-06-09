@@ -5,7 +5,7 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Achievements from './pages/Achievements.js';
 import Projects from './pages/Projects.js';
-import Blog from './pages/Blog.js';
+// import Blog from './pages/Blog.js';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path='/about' element={ <About /> } />
         <Route path='/achievements' element={ <Achievements /> } />
         <Route path='/projects' element={ <Projects /> } />
-        <Route path='/blog' element={ <Blog /> } />
+        {/* <Route path='/blog' element={ <Blog /> } /> */}
       </Routes>
     </Layout>
   );
