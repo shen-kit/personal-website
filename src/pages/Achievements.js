@@ -5,7 +5,14 @@ function Achievements() {
   return (
     <div className={classes.center}>
       <Heading number='1' text='Achievements and Awards' />
-      <h2>WACE/ATAR</h2>
+
+      <h2>University</h2>
+      <ul className={classes.mainList}>
+        <li><strong>1st place</strong> in the Monash Association of Coding UI/UX Design Hackathon (2024)</li>
+        <li>Currently maintaining a perfect GPA and 93 WAM</li>
+      </ul>
+
+      <h2>WACE / ATAR</h2>
       <ul className={classes.mainList}>
         <li>Graduated with a <strong>99.95 ATAR</strong> and final grades of:
           <ul>
@@ -34,16 +41,18 @@ function Achievements() {
         <li>Formed a barbershop quartet with 3 friends, we performed at primary schools and eventually at our own graduation ceremony</li>
         <li>Won 2 ICAS Science medals in 2019 & 2021 (top in the state)</li>
         <li>State finalist in the Microsoft AI For Good Challenge (2020)</li>
+        <li>Completed over <strong>110 hours of community service</strong> during senior highschool (Years 10-12)</li>
       </ul>
 
       <h2>University Scholarship Offers</h2>
-      <ul className={classes.mainList, classes.lastList}>
+      <ul className={classes.mainList + " " + classes.lastList}>
         <li><strong>UNSW</strong>: Scientia Scholarship</li>
         <li><strong>University of Melbourne</strong>: Chancellor's Scholarship</li>
         <li><strong>Monash</strong>: Sir John Monash Scholarship for Distinction</li>
         <li><strong>UWA</strong>: Lawrence Scholarship</li>
         <li><strong>Curtin</strong>: Top Excellence Scholarship</li>
       </ul> 
+
     </div>
   )
 }

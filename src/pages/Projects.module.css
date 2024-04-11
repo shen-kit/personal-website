@@ -1,11 +1,14 @@
 .section {
   display: grid;
-  grid-template-columns: 5fr 7fr;
   gap: 2rem;
   margin: 3rem 0;
 }
 
-.section:last-of-type {
+.section:nth-of-type(even) {
+  grid-template-columns: 5fr 7fr;
+}
+
+.section:nth-of-type(odd) {
   grid-template-columns: 7fr 5fr;
 }
 
@@ -20,4 +23,8 @@ iframe {
 
 .lastParagraph {
   margin-bottom: 3rem;
+}
+
+a {
+  color: var(--NORMAL-COLOR);
 }
