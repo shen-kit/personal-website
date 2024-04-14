@@ -38,10 +38,21 @@ function Projects() {
           <p>
             In 2020 I challenged myself to make and release a game to the public in only 4 weeks. This survival game was the result -  it was made
             in Unity and features a flexible weapon system and various enemies, as well as some unique mechanics. While it is far from polished, I
-            was extremely happy what I accomplished in 4 weeks, and this video documents the process of making the game.
+            was extremely happy what I accomplished in 4 weeks, and this video documents the process of making the game. It is free to download <a href='https://sk-studios.itch.io/life-is-short'>here</a>.
           </p>
         </div>
         <iframe src="https://www.youtube.com/embed/k9yz5tZ35-k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </section>
+
+      <section className={classes.section}>
+        <iframe frameborder="0" src="https://itch.io/embed/600889?bg_color=252525&amp;fg_color=ffffff&amp;border_color=111111" width="552" height="167"><a href="https://sk-studios.itch.io/stealth">Stealth by SK Studios</a></iframe>
+        <div>
+          <h2 className={classes.h2}>Stealth | 2020</h2>
+          <p>
+            From 2017-2020, I made many games. This game is relatively simple compared to Life is Short (above), but is my most popular one, with over 3000 plays online (across multiple websites)
+            and 100 downloads. It was made in Unity3D using C#.
+          </p>
+        </div>
       </section>
 
       <section>
