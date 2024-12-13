@@ -22,7 +22,7 @@ function Projects() {
         </div>
         <iframe
           src="https://www.youtube.com/embed/Wib5VxiJf9Y?si=bPnEf_tJ4oiLJxiQ"
-          title="YouTube video player"
+          title="yt video player kitkat language"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen="true"
         ></iframe>
@@ -31,7 +31,7 @@ function Projects() {
       <section className={classes.section}>
         <iframe
           src="https://www.youtube.com/embed/8KbLRf_oH9I?si=rSikTsuopVh9cWog"
-          title="YouTube video player"
+          title="yt video player waypoint"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen="true"
         ></iframe>
@@ -68,7 +68,7 @@ function Projects() {
         </div>
         <iframe
           src="https://youtube.com/embed/hdXAF2hohBY"
-          title="YouTube video player"
+          title="yt video player hia's up"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen="true"
         ></iframe>
@@ -77,7 +77,7 @@ function Projects() {
       <section className={classes.section}>
         <iframe
           src="https://www.youtube.com/embed/vpSjNAjYRa4?controls=1&amp;start=39"
-          title="Bujo App Video"
+          title="yt video player bujo"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen="true"
         ></iframe>
@@ -141,7 +141,7 @@ function Projects() {
         </div>
         <iframe
           src="https://www.youtube.com/embed/k9yz5tZ35-k"
-          title="YouTube video player"
+          title="yt video player life is short"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen="true"
         ></iframe>
@@ -150,6 +150,7 @@ function Projects() {
       <section className={classes.section}>
         <iframe
           frameborder="0"
+          title="yt video player stealth"
           src="https://itch.io/embed/600889?bg_color=252525&amp;fg_color=ffffff&amp;border_color=111111"
           width="552"
           height="167"
