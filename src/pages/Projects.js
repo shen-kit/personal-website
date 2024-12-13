@@ -130,12 +130,12 @@ function Projects() {
           <h2 className={classes.h2}>Life is Short | 2020</h2>
           <p>
             In 2020 I challenged myself to make and release a game to the public
-            in only 4 weeks. This survival game was the result - it was made in{" "}
+            in only 4 weeks. This survival game was the result — it was made in{" "}
             <strong>Unity3D using C#</strong> and features a flexible weapon
             system and various enemies, as well as some unique mechanics. While
             it is far from polished, I was extremely happy what I accomplished
             in 4 weeks, and this video documents the process of making the game.
-            It is free to download{" "}
+            It has over 150 downloads, and can be found{" "}
             <a href="https://sk-studios.itch.io/life-is-short">here</a>.
           </p>
         </div>
@@ -161,8 +161,8 @@ function Projects() {
           <h2 className={classes.h2}>Stealth | 2020</h2>
           <p>
             From 2017-2020, I made many games. This game is relatively simple
-            compared to Life is Short (above), but is my most popular one, with{" "}
-            <em>over 3000 plays online</em> (across multiple websites) and 100+
+            compared to Life is Short (above), but is my most popular one, with
+            over 3000 plays online (across multiple websites) and 100+
             downloads. It was made in <strong>Unity3D using C#</strong>.
           </p>
         </div>
