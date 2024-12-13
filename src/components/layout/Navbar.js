@@ -19,7 +19,10 @@ function Navbar() {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a href="https://downgit.github.io/#/home?url=https://github.com/shen-kit/personal-website/blob/main/shenkit_resume_2024.pdf">
+          <a
+            href="https://shen-kit.github.io/personal-website/shenkit_resume_2024.pdf"
+            download
+          >
             Resume
           </a>
         </li>
