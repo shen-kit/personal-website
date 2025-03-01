@@ -7,6 +7,43 @@ function Projects() {
       <Heading number="2" text="Projects" />
 
       <section className={classes.section}>
+        <iframe
+          src="https://www.youtube.com/embed/k_4rm1xgY7Y?si=4ikpg4Zwik5Wk0Fn"
+          title="yt video player finance tracker"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen="true"
+        ></iframe>
+        <div>
+          <h2 className={classes.h2}>Finance Tracker TUI | 2025</h2>
+          <p>
+            This finance tracker is unique as it runs in the terminal with a
+            terminal user interface (TUI). It was made using{" "}
+            <strong>Golang</strong> and the{" "}
+            <a href="https://github.com/rivo/tview/">tview</a> package, with a{" "}
+            <strong>sqlite database</strong> backend. Features include recording
+            income, expenditure and investments, custom categories, displaying
+            investment returns with data from Yahoo Finance, and dashboard
+            summaries. All CRUD database operations are supported, and it is
+            navigable using Vim keybindings. <br></br>
+            <br></br>
+            This project originated from me not wanting to open Google Sheets to
+            track my finances, alongside wanting the power of SQL to investigate
+            where my money is going. Apparently others have had the same wish as{" "}
+            <strong>
+              the project gained several stars on{" "}
+              <a href="https://github.com/shen-kit/finance-tracker-tui">
+                GitHub
+              </a>
+            </strong>
+            , with users requesting features such as custom scripting
+            capabilities and configuration files. Although the project is still
+            in its early days, I hope to turn it into a community project in the
+            future.
+          </p>
+        </div>
+      </section>
+
+      <section className={classes.section}>
         <div>
           <h2 className={classes.h2}>KitKat Language | 2024</h2>
           <p>
