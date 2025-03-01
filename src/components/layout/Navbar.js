@@ -20,7 +20,7 @@ function Navbar() {
         </li>
         <li>
           <a
-            href="https://shen-kit.github.io/personal-website/shenkit_resume_2024.pdf"
+            href="https://shen-kit.github.io/personal-website/shenkit_resume.pdf"
             download
           >
             Resume
