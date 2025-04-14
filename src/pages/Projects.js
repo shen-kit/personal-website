@@ -14,7 +14,7 @@ function Projects() {
           allowFullScreen="true"
         ></iframe>
         <div>
-          <h2 className={classes.h2}>Finance Tracker TUI | 2025</h2>
+          <h2 className={classes.h2}>TUI Finance Tracker | 2025</h2>
           <p>
             This finance tracker is unique as it runs in the terminal with a
             terminal user interface (TUI). It was made using{" "}
@@ -48,13 +48,13 @@ function Projects() {
           <h2 className={classes.h2}>KitKat Language | 2024</h2>
           <p>
             I created my own high-level, statically and strongly typed, compiled
-            programming language using <strong>Haskell</strong>. It compiles to
-            LLVM IR (a processor-independent intermediate representation), then
-            uses <tt>llc</tt> and <tt>gcc</tt> to link to the standard C
-            libraries and generate machine code. Functionality includes
-            integers/strings/booleans, conditionals (if/else if/else, while
-            loops), boolean logic and integer arithmetic, print statements, and
-            variables for all data types.
+            programming language using <strong>Haskell</strong>. It compiles to{" "}
+            <strong>LLVM IR</strong> (a processor-independent intermediate
+            representation), then uses <tt>llc</tt> and <tt>gcc</tt> to link to
+            the standard C libraries and generate machine code. Functionality
+            includes integers/strings/booleans, conditionals (if/else if/else,
+            while loops), boolean logic and integer arithmetic, print
+            statements, and variables for all data types.
           </p>
         </div>
         <iframe

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import classes from "./Navbar.module.css";
+import resume from "../../assets/resume.pdf";
 
 function Navbar() {
   return (
@@ -19,10 +20,7 @@ function Navbar() {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a
-            href="https://shen-kit.github.io/personal-website/shenkit_resume.pdf"
-            download
-          >
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </li>
