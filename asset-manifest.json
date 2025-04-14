@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.7f7fa47e.css",
-    "main.js": "/personal-website/static/js/main.bf7fbdff.js",
+    "main.js": "/personal-website/static/js/main.e20a8325.js",
     "static/media/resume.pdf": "/personal-website/static/media/resume.76325ef614d774d4f647.pdf",
     "static/media/oahs.jpg": "/personal-website/static/media/oahs.ba68cd27096c45d14c42.jpg",
     "index.html": "/personal-website/index.html",
     "main.7f7fa47e.css.map": "/personal-website/static/css/main.7f7fa47e.css.map",
-    "main.bf7fbdff.js.map": "/personal-website/static/js/main.bf7fbdff.js.map"
+    "main.e20a8325.js.map": "/personal-website/static/js/main.e20a8325.js.map"
   },
   "entrypoints": [
     "static/css/main.7f7fa47e.css",
-    "static/js/main.bf7fbdff.js"
+    "static/js/main.e20a8325.js"
   ]
 }
