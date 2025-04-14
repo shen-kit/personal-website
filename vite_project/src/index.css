@@ -1,1 +1,19 @@
 @import 'tailwindcss';
+
+:root {
+  --bg: #1e1d49;
+  --primary: #ccc;
+  --bright: #eee;
+  --accent: #F7776F;
+}
+
+:light-theme {
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--primary);
+  background: var(--bg);
+  font-size: 1.1rem;
+}
+
