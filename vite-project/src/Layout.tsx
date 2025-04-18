@@ -1,4 +1,4 @@
-import { AppShell, Group, rem } from "@mantine/core";
+import { AppShell, Group, Anchor, rem, Flex } from "@mantine/core";
 import { useHeadroom } from "@mantine/hooks";
 
 export default function Layout(props: any) {
@@ -7,20 +7,24 @@ export default function Layout(props: any) {
 
   return (
     <AppShell
-      header={{ height: 60, collapsed: !pinned, offset: false }} padding="md"
+      header={{ height: 72, collapsed: !pinned, offset: false }}
       withBorder={false}
     >
       <AppShell.Header>
-        <Group h="100%" px="md" grow>
-          <a>Home</a>
-          <Group gap="xl" justify='flex-end' mx="1rem">
-            <a>About Me</a>
-            <a>Achievements</a>
-            <a>Experience</a>
-            <a>Projects</a>
-            <a>Resume</a>
+        <Flex
+          justify="space-between"
+          pl="xl"
+          pr="xl"
+        >
+          <Anchor className="logo">SK</Anchor>
+          <Group gap="3rem" justify='flex-end' mx="1rem">
+            <Anchor className="nav-link">About Me</Anchor>
+            <Anchor className="nav-link">Achievements</Anchor>
+            <Anchor className="nav-link">Experience</Anchor>
+            <Anchor className="nav-link">Projects</Anchor>
+            <Anchor className="nav-link">Resume</Anchor>
           </Group>
-        </Group>
+        </Flex>
       </AppShell.Header>
 
       <AppShell.Main

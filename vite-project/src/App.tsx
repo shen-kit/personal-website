@@ -8,7 +8,7 @@ import Layout from './Layout';
 
 
 const theme = createTheme({
-  primaryColor: "orange",
+  primaryColor: "gray",
   colors: {
     orange: [
       "#ffeae8",

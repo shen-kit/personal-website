@@ -1,5 +1,9 @@
-/* import roboto font */
+/* roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* reenie beanie */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* source code pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* define global variables */
 :root {
@@ -16,10 +20,52 @@
   }
 }
 
+* {
+  transition: all 200ms;
+}
+
 .text-shadow {
   text-shadow: var(--shadow);
 }
 
 .text-shadow-sm {
   text-shadow: var(--shadow-sm);
+}
+
+.nav-link {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 0.85rem;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--mantine-color-orange-3)
+}
+
+.logo {
+  font-family: Reenie Beanie,cursive;
+  font-size: 3rem;
+  color: var(--mantine-color-bright);
+  letter-spacing: -0.2rem;
+}
+
+.logo:hover {
+  color: var(--mantine-color-orange-3);
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+}
+
+.bright-on-hover:hover {
+  /* filter: brightness(150%); */
+  color: var(--mantine-color-bright);
+}
+
+.scale-on-hover:hover {
+  transform-origin: left top;
+  transform: scale(1.05);
+}
+
+.scale-large-on-hover:hover {
+  transform: scale(1.2);
 }
