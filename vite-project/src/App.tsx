@@ -27,7 +27,20 @@ const theme = createTheme({
   fontFamilyMonospace: 'source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace',
   headings: {
     fontFamily: "Roboto",
-    fontWeight: "700",
+    fontWeight: "600",
+    sizes: {
+      h1: {
+        fontWeight: "600",
+        fontSize: "4rem",
+      },
+      h2: {
+        fontSize: "3rem",
+        fontWeight: "300",
+      },
+      h3: {
+        fontSize: "2rem",
+      },
+    },
   },
 })
 

@@ -1,4 +1,12 @@
+/* import roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* define global variables */
 :root {
+
+  --shadow: 2px 2px 3px #000;
+  --shadow-sm: 1px 1px 2px #000;
+
   @mixin light-root { }
 
   @mixin dark-root {
@@ -6,4 +14,12 @@
     --mantine-color-text: #ccc;
     --mantine-color-bright: #eee;
   }
+}
+
+.text-shadow {
+  text-shadow: var(--shadow);
+}
+
+.text-shadow-sm {
+  text-shadow: var(--shadow-sm);
 }

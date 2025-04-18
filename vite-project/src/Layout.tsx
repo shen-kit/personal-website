@@ -25,8 +25,9 @@ export default function Layout(props: any) {
 
       <AppShell.Main
         pt={`calc(${rem(60)} + var(--mantine-spacing-md))`}
-        px="6rem"
-        display="flex"
+        pl="9%"
+        pr="9%"
+        display="grid"
       >
         {props.children}
       </AppShell.Main>
