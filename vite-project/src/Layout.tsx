@@ -1,9 +1,12 @@
-import { AppShell, Group, Anchor, rem, Flex } from "@mantine/core";
+import { AppShell, Group, Anchor, Flex, } from "@mantine/core";
 import { useHeadroom } from "@mantine/hooks";
 
 export default function Layout(props: any) {
 
   const pinned = useHeadroom({ fixedAt: 120 });
+
+  const homeSection = document.getElementById('home-section');
+  const aboutSection = document.getElementById('about-section');
 
   return (
     <AppShell
@@ -16,9 +19,9 @@ export default function Layout(props: any) {
           pl="xl"
           pr="xl"
         >
-          <Anchor className="logo">SK</Anchor>
+          <Anchor className="logo" onClick={() => homeSection?.scrollIntoView({ behavior: 'smooth' })}>SK</Anchor>
           <Group gap="3rem" justify='flex-end' mx="1rem">
-            <Anchor className="nav-link">About Me</Anchor>
+            <Anchor className="nav-link" onClick={() => aboutSection?.scrollIntoView({ behavior: 'smooth' })}>About Me</Anchor>
             <Anchor className="nav-link">Achievements</Anchor>
             <Anchor className="nav-link">Experience</Anchor>
             <Anchor className="nav-link">Projects</Anchor>
@@ -28,13 +31,12 @@ export default function Layout(props: any) {
       </AppShell.Header>
 
       <AppShell.Main
-        pt={`calc(${rem(60)} + var(--mantine-spacing-md))`}
         pl="9%"
         pr="9%"
         display="grid"
       >
         {props.children}
       </AppShell.Main>
-    </AppShell>
+    </AppShell >
   );
 }

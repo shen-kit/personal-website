@@ -1,5 +1,7 @@
-/* roboto font */
+/* roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* roboto mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 /* reenie beanie */
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* source code pro */
@@ -30,6 +32,10 @@
 
 .text-shadow-sm {
   text-shadow: var(--shadow-sm);
+}
+
+.image-shadow {
+  box-shadow: var(--shadow);
 }
 
 .nav-link {
@@ -63,9 +69,17 @@
 
 .scale-on-hover:hover {
   transform-origin: left top;
-  transform: scale(1.05);
+  transform: scale(1.03);
+}
+
+.scale-large-on-hover {
+  transition: transform 0.1s;
 }
 
 .scale-large-on-hover:hover {
   transform: scale(1.2);
+}
+
+.orange {
+  color: var(--mantine-color-orange-3);
 }

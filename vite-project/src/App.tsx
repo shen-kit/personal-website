@@ -1,10 +1,10 @@
 import '@mantine/core/styles.css'
 import './styles.css'
-import { createTheme } from '@mantine/core';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, createTheme, Stack } from '@mantine/core';
 
-import HomePage from './pages/HomePage';
+import HomeSection from './sections/HomeSection.tsx';
 import Layout from './Layout';
+import AboutSection from './sections/AboutSection.tsx';
 
 
 const theme = createTheme({
@@ -24,7 +24,7 @@ const theme = createTheme({
     ],
   },
   fontFamily: 'Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
-  fontFamilyMonospace: 'source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace',
+  fontFamilyMonospace: 'Roboto Mono, source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace',
   headings: {
     fontFamily: "Roboto",
     fontWeight: "600",
@@ -49,7 +49,10 @@ export default function App() {
   return (
     <MantineProvider theme={theme} defaultColorScheme='dark'>
       <Layout>
-        <HomePage />
+        <Stack>
+          <HomeSection />
+          <AboutSection />
+        </Stack>
       </Layout>
     </MantineProvider>
   );
