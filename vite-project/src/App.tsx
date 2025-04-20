@@ -1,11 +1,11 @@
-import '@mantine/core/styles.css'
-import './styles.css'
-import { MantineProvider, createTheme, Stack } from '@mantine/core';
+import "@mantine/core/styles.css";
+import "./styles.css";
+import { MantineProvider, createTheme, Stack } from "@mantine/core";
 
-import HomeSection from './sections/HomeSection.tsx';
-import Layout from './Layout';
-import AboutSection from './sections/AboutSection.tsx';
-
+import HomeSection from "./sections/HomeSection.tsx";
+import Layout from "./Layout";
+import AboutSection from "./sections/AboutSection.tsx";
+import AchievementsSection from "./sections/AchievementsSection.tsx";
 
 const theme = createTheme({
   primaryColor: "gray",
@@ -20,11 +20,13 @@ const theme = createTheme({
       "#f22316",
       "#d8150b",
       "#c10d07",
-      "#a90003"
+      "#a90003",
     ],
   },
-  fontFamily: 'Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
-  fontFamilyMonospace: 'Roboto Mono, source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace',
+  fontFamily:
+    "Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+  fontFamilyMonospace:
+    "Roboto Mono, source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace",
   headings: {
     fontFamily: "Roboto",
     fontWeight: "600",
@@ -42,19 +44,18 @@ const theme = createTheme({
       },
     },
   },
-})
-
+});
 
 export default function App() {
   return (
-    <MantineProvider theme={theme} defaultColorScheme='dark'>
+    <MantineProvider theme={theme} defaultColorScheme="dark">
       <Layout>
         <Stack>
           <HomeSection />
           <AboutSection />
+          <AchievementsSection />
         </Stack>
       </Layout>
     </MantineProvider>
   );
 }
-
