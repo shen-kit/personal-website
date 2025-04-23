@@ -1,0 +1,34 @@
+.carouselSlide {
+  background: #2e2c78;
+  box-shadow: var(--shadow)
+}
+
+.indicator {
+  width: 18px;
+  height: 4px;
+  transition: width 250ms ease;
+
+  &[data-active] {
+    width: 30px;
+  }
+}
+
+.control {
+  &[data-inactive] {
+    opacity: 0;
+    cursor: default;
+  }
+}
+
+.controls {
+  transition: opacity 150ms ease;
+  opacity: 0;
+}
+
+.root {
+  &:hover {
+    .controls {
+      opacity: 1;
+    }
+  }
+}

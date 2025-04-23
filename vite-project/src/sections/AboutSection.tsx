@@ -21,7 +21,7 @@ export default function AboutSection() {
       ></Image>
       <Stack gap="lg">
         <SectionHeader number="0" text="About Me" />
-        <Text size="lg" className="scale-on-hover">
+        <Text size="lg">
           Shen-Kit graduated from Perth Modern School in 2022 with an ATAR of
           99.95, and is currently studying Software Engineering at Monash
           University. He has always been involved in many extracurricular
