@@ -4,6 +4,8 @@ import { Carousel } from "@mantine/carousel";
 import "@mantine/carousel/styles.css";
 
 import classes from "./AchievementsSection.module.css";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 interface CardProps {
   title: string;
@@ -17,6 +19,7 @@ function CarouselCard({ title, listItems }: CardProps) {
         h="100%"
         justify="start"
         pt="lg"
+        pb="xl"
         align="center"
         className={classes.carouselSlide}
       >
@@ -139,6 +142,8 @@ export default function AchievementsSection() {
     CarouselCard({ title: e.title, listItems: e.items }),
   );
 
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+
   return (
     <Stack
       justify="center"
@@ -151,12 +156,14 @@ export default function AchievementsSection() {
       <Carousel
         mt="xl"
         slideSize="60%"
-        height="60vh"
         slideGap="xl"
+        includeGapInSize={false}
         withIndicators
-        draggable={false}
-        speed={30}
+        speed={32}
         classNames={classes}
+        plugins={[autoplay.current]}
+        onMouseEnter={autoplay.current.stop}
+        onMouseLeave={autoplay.current.reset}
       >
         {slides}
       </Carousel>
