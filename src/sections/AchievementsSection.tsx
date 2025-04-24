@@ -19,11 +19,10 @@ function CarouselCard({ title, listItems }: CardProps) {
         <Stack
           h="100%"
           justify="center"
-          pt="lg"
+          p="lg"
           pb="xl"
           align="center"
           className={classes.carouselSlide}
-          pl="lg"
         >
           <Title order={4} pb="lg">
             {title}

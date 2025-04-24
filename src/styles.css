@@ -1,3 +1,5 @@
+/* ===== Import Fonts ===== */
+
 /* roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* roboto mono */
@@ -7,7 +9,7 @@
 /* source code pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-/* define global variables */
+/* ===== Global Variables ===== */
 :root {
 
   --shadow: 3px 3px 3px #000;
@@ -38,28 +40,6 @@
   box-shadow: var(--shadow);
 }
 
-.nav-link {
-  font-family: var(--mantine-font-family-monospace);
-  font-size: 0.85rem;
-}
-
-.nav-link:hover {
-  letter-spacing: 1px;
-  color: var(--mantine-color-orange-3)
-}
-
-.logo {
-  font-family: Reenie Beanie,cursive;
-  font-size: 3rem;
-  color: var(--mantine-color-bright);
-  letter-spacing: -0.2rem;
-}
-
-.logo:hover {
-  color: var(--mantine-color-orange-3);
-  letter-spacing: -0.1rem;
-}
-
 .bright-on-hover:hover {
   color: var(--mantine-color-bright);
 }
@@ -70,15 +50,11 @@
 }
 
 .scale-large-on-hover {
-  transition: transform 0.1s;
+  transition: transform 100ms;
 }
 
 .scale-large-on-hover:hover {
   transform: scale(1.2);
-}
-
-.orange {
-  color: var(--mantine-color-orange-3);
 }
 
 strong {

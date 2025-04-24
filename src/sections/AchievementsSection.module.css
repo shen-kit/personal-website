@@ -1,6 +1,6 @@
 .carouselSlide {
   background: #2e2c78;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
 }
 
 .indicator {
@@ -13,6 +13,7 @@
   }
 }
 
+/* hide disabled controls (at start or end) */
 .control {
   &[data-inactive] {
     opacity: 0;
@@ -25,6 +26,7 @@
   opacity: 0;
 }
 
+/* show controls only on hover */
 .root {
   &:hover {
     .controls {

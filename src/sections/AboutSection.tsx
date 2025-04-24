@@ -22,17 +22,15 @@ export default function AboutSection() {
       <Stack gap="xl">
         <SectionHeader number="0" text="About Me" />
         <Text size="lg">
-          Shen-Kit graduated from Perth Modern School in 2022 with an ATAR of
-          99.95, and is currently studying Software Engineering at Monash
-          University. He has always been involved in many extracurricular
-          activities, including music, basketball, volleyball, community service
-          soup kitchens, and academic competitions. He loves researching and
-          experimenting with productivity in the hopes of achieving as much as
-          he possibly can. This has allowed him to excel academically while
-          simultaneously playing in 6 ensembles, teaching himself to code,
-          starting a YouTube channel (now with over 500K views!), making time
-          for social activities, and working out to improve his fitness and
-          health.
+          Shen-Kit graduated from Perth Modern School with a 99.95 ATAR, and is
+          currently studying Software Engineering at Monash University. He has
+          always been involved in many extracurricular activities, including
+          music, basketball, volleyball, community service soup kitchens, and
+          academic competitions. Years of researching and experimenting with
+          productivity has enabled him to excel academically while playing in 6
+          ensembles, teaching himself to code, starting a YouTube channel (with
+          over 500K views!), making time for social activities, and working out
+          to improve his fitness and health.
         </Text>
       </Stack>
     </Flex>

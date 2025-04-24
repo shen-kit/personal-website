@@ -1,0 +1,21 @@
+.navLink {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 0.85rem;
+}
+
+.navLink:hover {
+  letter-spacing: 1px;
+  color: var(--mantine-color-orange-3)
+}
+
+.logo {
+  font-family: Reenie Beanie,cursive;
+  font-size: 3rem;
+  color: var(--mantine-color-bright);
+  letter-spacing: -0.2rem;
+}
+
+.logo:hover {
+  color: var(--mantine-color-orange-3);
+  letter-spacing: -0.1rem;
+}

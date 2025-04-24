@@ -56,9 +56,9 @@ const HomeSection = () => {
               Shen-Kit Hia.
             </Title>
           </Stack>
-          <Text size="lg" className="scale-on-hover">
-            I’m currently studying Software Engineering at Monash University,
-            and am passionate about coding, productivity, and fitness.
+          <Text size="lg" className="scale-on-hover" c={theme.colors.gray[5]}>
+            I'm currently studying Software Engineering at Monash university,
+            and love coding, productivity, and fitness.
           </Text>
           <Group>
             <Anchor
