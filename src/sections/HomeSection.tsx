@@ -7,13 +7,9 @@ import {
   Image,
   useMantineTheme,
   Box,
+  Anchor,
 } from "@mantine/core";
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaYoutube,
-  FaInstagram,
-} from "react-icons/fa6";
+import { FaLinkedinIn, FaGithub, FaYoutube } from "react-icons/fa6";
 
 import ProfilePicture from "../assets/profilePic.jpg";
 import { useEffect, useState } from "react";
@@ -65,18 +61,24 @@ const HomeSection = () => {
             and am passionate about coding, productivity, and fitness.
           </Text>
           <Group>
-            <a className="scale-large-on-hover bright-on-hover">
+            <Anchor
+              className="scale-large-on-hover bright-on-hover"
+              href="https://www.linkedin.com/in/shen-kit-hia/"
+            >
               <FaLinkedinIn size="1.5rem" />
-            </a>
-            <a className="scale-large-on-hover bright-on-hover">
+            </Anchor>
+            <Anchor
+              className="scale-large-on-hover bright-on-hover"
+              href="https://github.com/shen-kit"
+            >
               <FaGithub size="1.5rem" />
-            </a>
-            <a className="scale-large-on-hover bright-on-hover">
+            </Anchor>
+            <Anchor
+              className="scale-large-on-hover bright-on-hover"
+              href="https://www.youtube.com/@PracticalProgramming"
+            >
               <FaYoutube size="1.5rem" />
-            </a>
-            <a className="scale-large-on-hover bright-on-hover">
-              <FaInstagram size="1.5rem" />
-            </a>
+            </Anchor>
           </Group>
         </Stack>
         <Image
