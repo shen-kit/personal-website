@@ -20,16 +20,17 @@ import { useEffect, useState } from "react";
 
 const HomeSection = () => {
   const theme = useMantineTheme();
-  const aboutSection = document.getElementById("about-section");
-  const [scrollDownOpacity, setScrollDownOpacity] = useState(1);
+
+  const maxScrollDownOpacity = 0.5;
+  const [scrollDownOpacity, setScrollDownOpacity] =
+    useState(maxScrollDownOpacity);
 
   useEffect(() => {
     const handleScroll = () => {
-      const maxOpacity = 0.5;
       const fadeOutEnd = 200; // opacity = 0 after 300px
 
       setScrollDownOpacity(
-        Math.max(0, maxOpacity * (1 - window.scrollY / fadeOutEnd)),
+        Math.max(0, maxScrollDownOpacity * (1 - window.scrollY / fadeOutEnd)),
       );
     };
     window.addEventListener("scroll", handleScroll);
@@ -93,11 +94,15 @@ const HomeSection = () => {
           bottom: 20,
           left: "50%",
           transform: "translateX(-50%)",
-          opacity: scrollDownOpacity,
           cursor: "pointer",
         }}
         className="bright-on-hover"
-        onClick={() => aboutSection?.scrollIntoView({ behavior: "smooth" })}
+        opacity={scrollDownOpacity}
+        onClick={() =>
+          document
+            .getElementById("about-section")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
       >
         ↓ Scroll down
       </Text>

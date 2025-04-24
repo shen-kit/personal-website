@@ -1,4 +1,4 @@
-import { List, Stack, Title } from "@mantine/core";
+import { AspectRatio, List, Stack, Title } from "@mantine/core";
 import SectionHeader from "../components/SectionHeader";
 import { Carousel } from "@mantine/carousel";
 import "@mantine/carousel/styles.css";
@@ -15,21 +15,24 @@ interface CardProps {
 function CarouselCard({ title, listItems }: CardProps) {
   return (
     <Carousel.Slide>
-      <Stack
-        h="100%"
-        justify="start"
-        pt="lg"
-        pb="xl"
-        align="center"
-        className={classes.carouselSlide}
-      >
-        <Title order={4} pb="lg">
-          {title}
-        </Title>
-        <List withPadding mr="xl">
-          {listItems}
-        </List>
-      </Stack>
+      <AspectRatio ratio={15 / 9}>
+        <Stack
+          h="100%"
+          justify="center"
+          pt="lg"
+          pb="xl"
+          align="center"
+          className={classes.carouselSlide}
+          pl="lg"
+        >
+          <Title order={4} pb="lg">
+            {title}
+          </Title>
+          <List withPadding mr="xl">
+            {listItems}
+          </List>
+        </Stack>
+      </AspectRatio>
     </Carousel.Slide>
   );
 }
@@ -40,12 +43,23 @@ export default function AchievementsSection() {
       title: "University",
       items: [
         <List.Item>
+          Software Developer in{" "}
+          <strong>Monash Connected Autonomous Vehicles</strong> (MCAV)
+        </List.Item>,
+        <List.Item>
+          AI Branch Team Member in <strong>Monash Deep Neuron</strong> (MDN)
+        </List.Item>,
+        <List.Item>
           <strong>1st place</strong> in the Monash Beginner Competitive
           Programming Competition (2024)
         </List.Item>,
         <List.Item>
           <strong>1st place</strong> in the Monash Association of Coding UI/UX
           Design Hackathon (2024)
+        </List.Item>,
+        <List.Item>
+          Invited to the Monash{" "}
+          <strong>Ancora Imparo Leadership Program</strong> (2023)
         </List.Item>,
         <List.Item>Currently maintaining a 4.0 GPA and 94 WAM</List.Item>,
       ],
@@ -65,25 +79,24 @@ export default function AchievementsSection() {
           </List>
         </List.Item>,
         <List.Item>
-          <strong>Chemistry Subject Exhibition</strong> (top student in the
-          state)
+          <strong>Chemistry Subject Exhibition</strong> (top in the state)
         </List.Item>,
         <List.Item>
           <strong>General Exhibition</strong> (14th in the state)
         </List.Item>,
       ],
     },
-    {
-      title: "School Awards",
-      items: [
-        <List.Item>Academic Excellence Award</List.Item>,
-        <List.Item>
-          Top 3 in Chemistry, Mathematics Methods, Mathematics Specialist, and
-          Physics
-        </List.Item>,
-        <List.Item>Platinum House Award (achieved in 2020)</List.Item>,
-      ],
-    },
+    // {
+    //   title: "High School",
+    //   items: [
+    //     <List.Item>Academic Excellence Award (2022)</List.Item>,
+    //     <List.Item>
+    //       Top 3 in ATAR Chemistry, Mathematics Methods, Mathematics Specialist,
+    //       and Physics (2022)
+    //     </List.Item>,
+    //     <List.Item>Platinum House Award (2020)</List.Item>,
+    //   ],
+    // },
     {
       title: "Co-Curricular",
       items: [
@@ -142,7 +155,7 @@ export default function AchievementsSection() {
     CarouselCard({ title: e.title, listItems: e.items }),
   );
 
-  const autoplay = useRef(Autoplay({ delay: 3000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
 
   return (
     <Stack
@@ -152,13 +165,11 @@ export default function AchievementsSection() {
       mih="100vh"
       id="achievements-section"
     >
-      <SectionHeader number="1" text="Achievements" />
+      <SectionHeader number="1" text="Achievements and Awards" />
       <Carousel
-        slideSize="60%"
+        slideSize="70%"
         slideGap="xl"
-        includeGapInSize={false}
         withIndicators
-        speed={32}
         classNames={classes}
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}

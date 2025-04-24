@@ -30,7 +30,7 @@ export default function AboutSection() {
           experimenting with productivity in the hopes of achieving as much as
           he possibly can. This has allowed him to excel academically while
           simultaneously playing in 6 ensembles, teaching himself to code,
-          starting a YouTube channel (with 500K views), regularly making time
+          starting a YouTube channel (now with over 500K views!), making time
           for social activities, and working out to improve his fitness and
           health.
         </Text>

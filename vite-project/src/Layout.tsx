@@ -43,9 +43,9 @@ export default function Layout(props: any) {
             >
               Achievements
             </Anchor>
-            <Anchor className="nav-link" underline="never">
+            {/*<Anchor className="nav-link" underline="never">
               Experience
-            </Anchor>
+            </Anchor>*/}
             <Anchor
               className="nav-link"
               underline="never"

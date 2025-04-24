@@ -10,7 +10,7 @@
 /* define global variables */
 :root {
 
-  --shadow: 2px 2px 3px #000;
+  --shadow: 3px 3px 3px #000;
   --shadow-sm: 1px 1px 2px #000;
 
   @mixin light-root { }

@@ -12,7 +12,9 @@ export default function SectionHeader(props: any) {
       >
         {props.number}.
       </Title>
-      <Title order={3}>{props.text}</Title>
+      <Title c={theme.colors.gray[2]} order={3}>
+        {props.text}
+      </Title>
     </Group>
   );
 }
