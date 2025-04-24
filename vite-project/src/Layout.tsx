@@ -1,5 +1,6 @@
 import { AppShell, Group, Anchor, Flex } from "@mantine/core";
 import { useHeadroom } from "@mantine/hooks";
+import resume from "./assets/resume.pdf";
 
 export default function Layout(props: any) {
   const pinned = useHeadroom({ fixedAt: 120 });
@@ -54,7 +55,13 @@ export default function Layout(props: any) {
             >
               Projects
             </Anchor>
-            <Anchor className="nav-link" underline="never">
+            <Anchor
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+              underline="never"
+            >
               Resume
             </Anchor>
           </Group>
