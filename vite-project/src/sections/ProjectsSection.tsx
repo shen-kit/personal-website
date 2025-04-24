@@ -98,11 +98,11 @@ export default function ProjectsSection() {
             I created my own high-level, statically and strongly typed, compiled
             programming language using <strong>Haskell</strong>. It compiles to{" "}
             <strong>LLVM IR</strong> (a processor-independent intermediate
-            representation), then uses <tt>llc</tt> and <tt>gcc</tt> to link to
-            the standard C libraries and generate machine code. Functionality
-            includes integers/strings/booleans, conditionals (if/else if/else,
-            while loops), boolean logic and integer arithmetic, print
-            statements, and variables for all data types.
+            representation), then uses <code>llc</code> and <code>gcc</code> to
+            link to the standard C libraries and generate machine code.
+            Functionality includes integers/strings/booleans, conditionals
+            (if/else if/else, while loops), boolean logic and integer
+            arithmetic, print statements, and variables for all data types.
           </Text>
         }
       />
