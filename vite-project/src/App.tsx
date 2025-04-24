@@ -6,6 +6,7 @@ import HomeSection from "./sections/HomeSection.tsx";
 import Layout from "./Layout";
 import AboutSection from "./sections/AboutSection.tsx";
 import AchievementsSection from "./sections/AchievementsSection.tsx";
+import ProjectsSection from "./sections/ProjectsSection.tsx";
 
 const theme = createTheme({
   primaryColor: "gray",
@@ -54,6 +55,7 @@ export default function App() {
           <HomeSection />
           <AboutSection />
           <AchievementsSection />
+          <ProjectsSection />
         </Stack>
       </Layout>
     </MantineProvider>

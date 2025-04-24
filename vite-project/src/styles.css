@@ -44,7 +44,6 @@
 }
 
 .nav-link:hover {
-  text-decoration: none;
   letter-spacing: 1px;
   color: var(--mantine-color-orange-3)
 }
@@ -59,11 +58,9 @@
 .logo:hover {
   color: var(--mantine-color-orange-3);
   letter-spacing: -0.1rem;
-  text-decoration: none;
 }
 
 .bright-on-hover:hover {
-  /* filter: brightness(150%); */
   color: var(--mantine-color-bright);
 }
 

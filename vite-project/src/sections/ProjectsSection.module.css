@@ -1,0 +1,13 @@
+.projectTitle {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+iframe {
+  border: none;
+}
+
+.project:nth-child(odd) {
+  flex-direction: row-reverse;
+}

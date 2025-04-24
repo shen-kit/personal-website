@@ -7,6 +7,7 @@ export default function Layout(props: any) {
   const homeSection = document.getElementById("home-section");
   const aboutSection = document.getElementById("about-section");
   const achievementsSection = document.getElementById("achievements-section");
+  const projectsSection = document.getElementById("projects-section");
 
   return (
     <AppShell
@@ -17,6 +18,7 @@ export default function Layout(props: any) {
         <Flex justify="space-between" pl="xl" pr="xl">
           <Anchor
             className="logo"
+            underline="never"
             onClick={() => homeSection?.scrollIntoView({ behavior: "smooth" })}
           >
             SK
@@ -24,6 +26,7 @@ export default function Layout(props: any) {
           <Group gap="3rem" justify="flex-end" mx="1rem">
             <Anchor
               className="nav-link"
+              underline="never"
               onClick={() =>
                 aboutSection?.scrollIntoView({ behavior: "smooth" })
               }
@@ -32,15 +35,28 @@ export default function Layout(props: any) {
             </Anchor>
             <Anchor
               className="nav-link"
+              underline="never"
               onClick={() =>
                 achievementsSection?.scrollIntoView({ behavior: "smooth" })
               }
             >
               Achievements
             </Anchor>
-            <Anchor className="nav-link">Experience</Anchor>
-            <Anchor className="nav-link">Projects</Anchor>
-            <Anchor className="nav-link">Resume</Anchor>
+            <Anchor className="nav-link" underline="never">
+              Experience
+            </Anchor>
+            <Anchor
+              className="nav-link"
+              underline="never"
+              onClick={() =>
+                projectsSection?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Projects
+            </Anchor>
+            <Anchor className="nav-link" underline="never">
+              Resume
+            </Anchor>
           </Group>
         </Flex>
       </AppShell.Header>

@@ -148,13 +148,12 @@ export default function AchievementsSection() {
     <Stack
       justify="center"
       align="center"
-      gap="18%"
+      gap="xl"
       mih="100vh"
       id="achievements-section"
     >
       <SectionHeader number="1" text="Achievements" />
       <Carousel
-        mt="xl"
         slideSize="60%"
         slideGap="xl"
         includeGapInSize={false}

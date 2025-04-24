@@ -19,7 +19,7 @@ export default function AboutSection() {
         h="35vw"
         w="25vw"
       ></Image>
-      <Stack gap="lg">
+      <Stack gap="xl">
         <SectionHeader number="0" text="About Me" />
         <Text size="lg">
           Shen-Kit graduated from Perth Modern School in 2022 with an ATAR of
